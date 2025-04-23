@@ -5,6 +5,19 @@ public class Account {
 	private String acctId;
 	private int balance;
 	
+	//Default Constructor(생성자)
+	public Account() {
+		System.out.println("Default Constructor Called..");
+	}
+	
+	//Constructor Overloading(생성자 중복정의)
+	public Account(String custId, String acctId, int balance) {
+		super();
+		this.custId = custId;
+		this.acctId = acctId;
+		this.balance = balance;
+	}
+	
 	//setter
 	public void setCustId(String custId) {
 		this.custId = custId;
